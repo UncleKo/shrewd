@@ -1,0 +1,19 @@
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+// Variables
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+   background: $ai;
+}
