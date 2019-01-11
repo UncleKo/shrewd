@@ -8,7 +8,13 @@ html {
 
 body {
    background: $ai;
-   font-family: $noto-sans;
+   font-family: $lato;
+   font-size: 16px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
@@ -16,3 +22,50 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+section {
+
+  padding: 50px 0;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+    h1 {
+      font-family: $oswald;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: white;
+      background: $orange;
+      padding: 20px;
+      position: relative;
+
+      &::before {
+        background-color: $orange;
+        opacity: .5;
+        content: "";
+        height: 100%;
+        left: -500%;
+        position: absolute;
+        top: 0;
+        width: 500%;
+        z-index: 3;
+      } //h1::before
+
+    } //h1
+
+    h2 {
+      font-family: meiryo, $noto-sans;
+      font-size: 1.3em;
+      font-weight: 100;
+      @media (max-width: 980px) {
+        margin-right: 10px;
+      }
+    }
+
+  } //header
+
+} //section

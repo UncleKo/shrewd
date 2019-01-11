@@ -149,13 +149,71 @@ html {
 
 body {
   background: #0d5661;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .container {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+section header h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: white;
+  background: #f6993f;
+  padding: 20px;
+  position: relative;
+}
+
+section header h1::before {
+  background-color: #f6993f;
+  opacity: .5;
+  content: "";
+  height: 100%;
+  left: -500%;
+  position: absolute;
+  top: 0;
+  width: 500%;
+  z-index: 3;
+}
+
+section header h2 {
+  font-family: meiryo, "Noto Sans JP", sans-serif;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+@media (max-width: 980px) {
+  section header h2 {
+    margin-right: 10px;
+  }
 }
 
 header {
@@ -183,19 +241,44 @@ header .container div:first-child {
   position: relative;
 }
 
-header .container div:first-child:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
+@media (max-width: 980px) {
+  header .container div:first-child {
+    width: 237px;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+@media (max-width: 484px) {
+  header .container div:first-child {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 10px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 484px) {
+  header .container div:first-child:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
 }
 
 header .container div:first-child h1 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 900;
   letter-spacing: -1px;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+}
+
+@media (min-width: 484px) {
+  header .container div:first-child h1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 
 header .container div:nth-child(2) {
@@ -206,14 +289,33 @@ header .container div:nth-child(2) {
           flex: 3;
 }
 
+@media (max-width: 980px) {
+  header .container div:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
 header .container div:nth-child(2) h2 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 300;
   position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transform-origin: 15px 29px;
-          transform-origin: 15px 29px;
+  -webkit-transform-origin: 11px 32px;
+          transform-origin: 11px 32px;
+}
+
+@media (max-width: 484px) {
+  header .container div:nth-child(2) h2 {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: relative;
+    margin: 10px;
+    text-align: right;
+    font-size: 1.9rem;
+  }
 }
 
 header .container div:nth-child(3) {
@@ -221,27 +323,37 @@ header .container div:nth-child(3) {
       flex-basis: 100%;
   background: #26453d;
   padding: 10px;
-  padding-top: 60px;
+  padding-top: 50px;
   margin-top: 10px;
   text-align: right;
 }
 
+@media (max-width: 484px) {
+  header .container div:nth-child(3) {
+    padding-top: 10px;
+  }
+}
+
 header .container div:nth-child(3) h3 {
-  font-size: .8em;
+  font-family: meiryo, "Noto Sans JP", sans-serif;
+  font-size: .8rem;
   font-weight: 100;
+  line-height: 1.4;
 }
 
 header .container > p {
-  font-size: 2em;
-  font-weight: 100;
+  font-size: 2rem;
+  font-weight: 300;
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
 
 header .container > p a {
+  color: white;
   padding-left: 5px;
-  cursor: pointer;
+  position: relative;
+  top: 3px;
   opacity: .5;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -249,5 +361,98 @@ header .container > p a {
 
 header .container > p a:hover {
   opacity: 1;
+}
+
+#skills {
+  height: 100vh;
+}
+
+#skills > div > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#skills > div > ul > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: white;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #skills > div > ul > li {
+    width: calc((100% - 10px)/2);
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+}
+
+@media (max-width: 484px) {
+  #skills > div > ul > li {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+  }
+}
+
+#skills > div > ul > li:last-child {
+  margin-right: 0px;
+}
+
+@media (max-width: 768px) {
+  #skills > div > ul > li:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  #skills > div > ul > li:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+
+  #skills > div > ul > li > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+#skills > div > ul > li > div {
+  border: 4px solid #f6993f;
+}
+
+#skills > div > ul > li > div h3 {
+  color: white;
+  background: #f6993f;
+  font-size: 1.1rem;
+  padding: 3px 5px;
+}
+
+#skills > div > ul > li > div h4 {
+  color: white;
+  background: #bd4a15;
+  padding: 5px 7px;
+  text-align: right;
+  font-family: meiryo, "Noto Sans JP", sans-serif;
+}
+
+#skills > div > ul > li > div ul {
+  color: #26453d;
+  padding: 5px;
+}
+
+#skills > div > ul > li > div ul li {
+  margin: 5px;
 }
 
