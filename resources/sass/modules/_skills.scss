@@ -1,7 +1,5 @@
 #skills {
 
-  height: 100vh;
-
   & > div {
 
     & > ul {
@@ -16,8 +14,9 @@
         margin-bottom: 10px;
         position: relative;
         @media (max-width: 768px) {
-          width: calc((100% - 10px)/2);
-          flex: none;
+          flex-basis: calc((100% - 10px)/2);
+          // width: calc((100% - 10px)/2);
+          // flex: none;
         }
         @media (max-width: 484px) {
           flex-basis: 100%;
