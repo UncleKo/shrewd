@@ -1,2 +1,2 @@
-### The Website is [Here](http://shrewd.work/).
-[http://shrewd.work/](http://shrewd.work/)
+### The Website is [Here](https://uncleko.github.io/shrewd/).
+[https://uncleko.github.io/shrewd/](https://uncleko.github.io/shrewd/)
