@@ -39,7 +39,8 @@ header{
         }
 
         h1 {
-          font-size: 2rem;
+          font-family: $lato;
+          font-size: 2.2rem;
           font-weight: 900;
           letter-spacing: -1px;
           @media (min-width: 484px) {
@@ -62,6 +63,7 @@ header{
         }
 
         h2 {
+          font-family: $lato;
           font-size: 2rem;
           font-weight: 300;
           position: absolute;
@@ -84,17 +86,21 @@ header{
         padding: 10px;
         padding-top: 50px;
         margin-top: 10px;
-        text-align: right;
+        // text-align: right;
         @media (max-width: 484px) {
           padding-top: 10px;
         }
         h3 {
-          font-family: meiryo, $noto-sans;
+          font-family: meiryo, sans-serif;
           font-size: .8rem;
-          font-weight: 100;
+          // font-weight: 100;
           line-height: 1.4;
+          // font-feature-settings: "palt";
           @media (min-width: 980px) {
             margin-left: 237px;
+          }
+          @media (max-width: 484px) {
+            font-size: .9rem;
           }
         }//h3
       }//nth-child(3)

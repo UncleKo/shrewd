@@ -1,7 +1,5 @@
 #skills {
 
-  & > div {
-
     & > ul {
       display: flex;
       flex-wrap: wrap;
@@ -63,7 +61,7 @@
             background: $brown;
             padding: 5px 7px;
             text-align: right;
-            font-family: meiryo, $noto-sans;
+            font-family: meiryo, sans-serif;
           }
 
           ul {
@@ -72,17 +70,21 @@
             padding: 5px;
 
             li {
-              margin: 5px;
+              margin: 8px 5px;
             }
 
           }//ul
+
+          @media (max-width: 768px) {
+            h3, h4, ul li {
+              font-size: 1.2em;
+            }
+          } //@media
           
         } //div
 
       } //li
 
     } //ul
-
-  } //div
 
 } //#skills

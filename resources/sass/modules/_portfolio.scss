@@ -26,6 +26,7 @@
 	
       @media (max-width: 768px) {
         flex-basis: calc(100% - 50px);
+        margin-right: 10px;
       }
       
       @media (min-width: 768px) {
@@ -38,21 +39,30 @@
         color: $white;
         background: $orange;
         font-size: 1.1rem;
+        @media (max-width: 768px) {
+          font-size: 1.3rem;
+        }
         // padding: 3px 5px;
         display: inline-block;
-        margin-top: 15px;
+        margin-top: 6px;
+        margin-bottom: 6px;
         position: relative;
         left: -50px;
         border: 2px solid $brown;
+        padding: 2px;
       } //h3
 
       p {
-        font-family: meiryo, $noto-sans;
-        font-size: .8rem;
-        font-weight: 100;
+        font-family:  meiryo, sans-serif;
+        font-size: .9em;
+        // font-weight: 100;
+        // font-feature-settings: "palt";
         line-height: 1.4;
         color: $tetsu;
         padding: 5px 15px 15px;
+        @media (max-width: 484px) {
+          font-size: 1em;
+        }
       } //p
 
     } //li

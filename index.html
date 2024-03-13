@@ -4,10 +4,10 @@
    <meta charset="UTF-8">
    <title>Shrewd Design Studio</title>
    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700,900&amp;subset=japanese" rel="stylesheet"> 
-   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Oswald:200,300,400,500,600,700" rel="stylesheet"> 
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,900|Oswald:200,300,400,500,600,700" rel="stylesheet"> 
    <link href="./css/icon-fonts.css" rel="stylesheet">
    <link href="./css/main.css" rel="stylesheet">
-   <meta name="description" content="余分な装飾を抑え、タイポグラフィを中心に据えたシンプルなデザイン。表のデザインと裏の機能が密接に絡み合う、そんなウェブデザインを提供します。">
+   <meta name="description" content="余分な装飾を抑え、タイポグラフィを中心に据えたシンプルなデザイン。表のデザインと裏の機能が密接に絡み合う、そんなウェブデザインを提供します。鹿児島を拠点に世界に向けて。">
    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 </head>
 <body>
@@ -23,15 +23,61 @@
          <div>
             <h3>余分な装飾を抑え、タイポグラフィを中心に据えたシンプルなデザイン。背景に存在するコードもスッキリと、無駄を省き理路整然と。そして表のデザインと裏の機能が密接に絡み合う、そんなウェブデザインを提供します。</h3>
          </div>
-         <p>More<a class="arrow_carrot-down_alt" href="#skills"></a></p>
+         <p>More<a class="arrow_carrot-down_alt" href="#portfolio"></a></p>
       </div>
    </header>
 
    <main>
 
-      <section id="skills">
+      
+      <section>
 
-         <div class="container">
+         <div class="container" id="portfolio">
+
+            <header>
+               <h1>Portfolio</h1>
+               <h2>制作事例</h2>
+            </header>
+
+            <ul>
+               <li>
+                  <h3>Webstore Sample</h3>
+                  <p>Python/Djangoをバックエンドに使用したウェブストアのサンプルサイトです。管理画面にはWagtailを利用し、更新作業を容易に、シンプル化を目指しました。サンプルとは言え、カート機能/在庫・顧客管理など、実際に使用できるレベルです。</p>
+                  <p>またサーバーにはRender、AWSといったものの無料枠で全て賄い、無料でもこれだけのシステムを運営できることも提示しています。興味のある方は実際に登録して、ショッピングシステムを体験してみて下さい。</p>
+                  <p>
+                    <a href="https://store7.onrender.com/" target="_blank">サイトを見る</a>
+                  </p>
+               </li>
+               <li>
+                  <h3>Site for an Architect</h3>
+                  <p>カリフォルニア在住の建築家のためのサイトです。バックエンドにはWordPressを使用。一からオリジナルのテーマに仕上げました。建築物をモチーフにした幾何学的なメニューを採用。ポートフォリオにはシンプルなスライドショーを使用し、作品そのものに集中できるようにしてます。</p>
+                  <p>またデスクトップ向けには基本、ほとんどのページに背景画像をランダムに入れ替えて表示してますが、スマホ向けには小さい画面でも見やすいよう、背景白で基本文字のみで構成されるシンプルな、ほとんど別のデザインにしてあります。クライアントの要望で使用した書体Universも実にこのサイトにはハマってる感じです。</p>
+                  <p>
+                    <a href="https://th-architect.com/" target="_blank">サイトを見る</a>
+                  </p>
+               </li>
+               <li>
+                  <h3>Site for a dresser</h3>
+                  <p>出張で着付け師をされてる方のサイトです。名刺代わりともいえる、シンプルな1ページのサイトで、過去の仕事例を紹介する自作のスライドショーを中心に据えてます。バックエンド（管理画面）は使用せず、ファイルを書き換えてFTPでアップロードするという手法を指導させて頂き、そのやり方でご自身で更新されています。シンプルなサイトで低予算で済ませるのであれば、それもひとつの方法としておすすめ致しております。</p>
+                  <p>
+                    <a href="http://kituke-futamata.boo.jp/" target="_blank">サイトを見る</a>
+                  </p>
+               </li>
+               <li>
+                  <h3>Site for a Design Studio</h3>
+                  <p>私自身の以前のサイトです。当時流行でもあった長い1ページのサイトをスクロールするパターンのサイトです。メニューをクリックすると、該当の場所へオートスクロールしていくというあれです。効果的に必要なところにJavaScriptで動きを加えてありますが、多用は控えたつもりです。トップ画面には背景画像をランダムで入れ替わるように配置してます。アクセス（ページリロード）する度に違う背景画像が表示されます。</p>
+                  <p>
+                    <a href="https://uncleko.github.io/area40/" target="_blank">サイトを見る</a>
+                  </p>
+               </li>
+            </ul>
+
+         </div> <!-- container -->
+
+      </section> <!-- #skills -->
+      <section>
+
+         <div class="container"  id="skills">
 
             <header>
                <h1>Skills</h1>
@@ -46,8 +92,8 @@
                         <li>HTML</li>
                         <li>CSS/Sass</li>
                         <li>JavaScript</li>
-                        <li>PHP</li>
                         <li>Python</li>
+                        <li>PHP</li>
                      </ul>
                   </div>
                </li>
@@ -56,9 +102,9 @@
                      <h3>Frameworks</h3>
                      <h4>フレームワーク</h4>
                      <ul class="nested">
-                        <li>Vue</li>
-                        <li>React</li>
                         <li>Django</li>
+                        <li>React</li>
+                        <li>Vue</li>
                         <li>Laravel</li>
                         <li>WordPress</li>
                      </ul>
@@ -81,10 +127,12 @@
                      <h3>Workflows</h3>
                      <h4>開発環境</h4>
                      <ul class="nested">
+                        <li>Mac</li>
+                        <li>Windows</li>
+                        <li>Ubuntu(Linux)</li>
+                        <li>LAMP</li>
                         <li>Webpack</li>
                         <li>Git</li>
-                        <li>LAMP</li>
-                        <li>Vagrant</li>
                      </ul>
                   </div>
                </li>
@@ -94,37 +142,22 @@
 
       </section> <!-- #skills -->
 
-      <section id="portfolio">
+      <section>
 
-         <div class="container">
+         <div class="container" id="mission">
 
             <header>
-               <h1>Portfolio</h1>
-               <h2>ポートフォリオ</h2>
+               <h1>Mission</h1>
+               <h2>仕事内容</h2>
             </header>
+            <div>
+              <p>鹿児島を拠点にしているWEBデザイナー/ディヴェロッパーです。鹿児島に限らず、日本中、世界中から仕事をお引き受けします。ホームページ制作はもちろん、シンプルなWEBアプリーケーションも制作致します。また販売促進に関する印刷物なども可能な範囲で提供致します。</p>
+              <p>ご質問等ございまいしたら、<a href="https://store7.onrender.com/%E3%81%8A%E5%95%8F%E5%90%88%E3%81%9B/" target="_blank">こちらの問い合わせフォーム(外部サイトに移動します)</a>よりお気軽にお問い合わせ下さい。よろしくお願い申し上げます。</p>
+            </div>
 
-            <ul>
-               <li>
-                  <h3>Restaurant Sample Site</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia nulla ipsum voluptatum qui nemo, incidunt repellendus? Laboriosam provident ullam enim laudantium quam iure nemo ut, veniam dolorum minus corporis.</p>
-               </li>
-               <li>
-                  <h3>Music Sreaming Site Sample</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, nisi minus quis beatae dignissimos minima pariatur? Illum, ad doloribus molestias illo consequatur, possimus inventore perferendis cum commodi harum, est hic.</p>
-               </li>
-               <li>
-                  <h3>Sample Site</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia nulla ipsum voluptatum qui nemo, incidunt repellendus? Laboriosam provident ullam enim laudantium quam iure nemo ut, veniam dolorum minus corporis.</p>
-               </li>
-               <li>
-                  <h3>Sample Site</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quia nulla ipsum voluptatum qui nemo, incidunt repellendus? Laboriosam provident ullam enim laudantium quam iure nemo ut, veniam dolorum minus corporis.</p>
-               </li>
-            </ul>
+        </div> <!-- container -->
 
-         </div> <!-- container -->
-
-      </section> <!-- #skills -->
+      </section> <!-- #mission -->
 
    </main>
    
